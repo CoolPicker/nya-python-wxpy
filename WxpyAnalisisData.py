@@ -8,7 +8,7 @@ if sys.getdefaultencoding() != 'utf-8':
     reload(sys)
     sys.setdefaultencoding('utf-8')
 
-bot = Bot(cache_path="/home/han/python-test/wxpy.pkl")
+bot = Bot(cache_path="/home/lab/wxpy/wxpy.pkl")
 
 # test = unicode('我的好友数 : ', errors='replace')
 
@@ -24,7 +24,7 @@ t2 = bot.mps(update=False)
 
 print '关注的微信公众号数 : ' + str(len(t2))
 
-fri = unicode('唐光聪', errors='replace')
+fri = unicode('弟', errors='replace')
 
 my_friend = bot.friends().search(fri)[0]
 

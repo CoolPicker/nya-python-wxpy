@@ -9,13 +9,13 @@ if sys.getdefaultencoding() != 'utf-8':
     reload(sys)
     sys.setdefaultencoding('utf-8')
 
-bot = Bot(cache_path="/home/han/python-test/wxpy.pkl")
+bot = Bot(cache_path="/home/lab/wxpy/wxpy.pkl")
 
 tuling = Tuling(api_key='1f62dcd7b2374f08a76253c6eb661711')
 
 print "图灵机器人已启动..."
 
-friend_name = unicode('唐光聪', errors='replace')
+friend_name = unicode('王永哲', errors='replace')
 
 my_friend = bot.friends().search(friend_name)[0]
 
